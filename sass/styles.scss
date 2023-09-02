@@ -31,7 +31,7 @@ body{
 
 .img{
     margin: 0 auto;
-    background-image: url(./images/image-equilibrium.jpg);
+    background-image: url(/images/image-equilibrium.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -43,7 +43,7 @@ body{
 .eye_img{
     opacity: 0;
     background-color: cyan;
-    background-image: url(./images/icon-view.svg);
+    background-image: url(/images/icon-view.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
