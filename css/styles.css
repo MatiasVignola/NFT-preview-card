@@ -2,9 +2,12 @@
 /*body bg*/
 /*card bg*/
 /*line*/
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+body {
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
   background-color: hsl(217deg, 54%, 11%);
@@ -12,29 +15,49 @@ body {
 }
 
 .main {
-  width: 330px;
+  width: 304px;
   height: 555px;
   margin: 63px auto;
   border-radius: 15px;
+  padding: 26px;
   background-color: hsl(216deg, 50%, 16%);
 }
 
-.nft {
-  margin: 25px;
-  width: 280px;
+.img {
+  margin: 0 auto;
+  background-image: url(/images/image-equilibrium.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
   height: 280px;
   border-radius: 15px;
+  overflow: hidden;
+}
+
+.eye_img {
+  opacity: 0;
+  background-color: cyan;
+  background-image: url(/images/icon-view.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.eye_img:hover {
+  opacity: 0.5;
+  cursor: pointer;
 }
 
 .texts h2 {
-  margin: 5px 25px;
+  margin: 25px 0 18px;
   color: white;
   font-size: 1.25em;
   font-weight: 600;
 }
 
 .texts p {
-  margin: 15px 25px 0;
+  margin: 15px 0 15px;
   font-size: 16px;
   text-align: start;
   line-height: 25px;
@@ -42,7 +65,7 @@ body {
 }
 
 .eth {
-  margin: 0 25px;
+  margin: 25px 0;
   display: flex;
   justify-content: space-between;
   font-size: 16px;
@@ -66,8 +89,8 @@ body {
 }
 
 .avatar {
-  margin: 0 25px;
-  padding: 5px 0 0;
+  margin: auto;
+  padding: 25px 0 0;
   font-size: 16px;
   box-sizing: border-box;
   border-top: 1px solid hsl(215deg, 32%, 27%);
@@ -108,10 +131,6 @@ body {
     width: 350px;
     height: 600px;
     margin: 150px auto 130px;
-  }
-  .nft {
-    width: 300px;
-    height: 300px;
   }
 }
 
