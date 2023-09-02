@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+
+$Very-dark-blue-b: hsl(217, 54%, 11%); /*body bg*/
+$Very-dark-blue-c: hsl(216, 50%, 16%); /*card bg*/
+$Very-dark-blue-l: hsl(215, 32%, 27%); /*line*/
+$White: hsl(0, 0%, 100%);
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    background-color: $Very-dark-blue-b;
+    font-size: 18px;
+}
+
+.main{
+    width: 330px;
+    height: 555px;
+    margin: 63px auto;
+    border-radius: 15px;
+    background-color: $Very-dark-blue-c;
+}
+
+.nft{
+    margin: 25px;
+    width: 280px;
+    height: 280px;
+    border-radius: 15px;
+}
+
+.texts h2{
+    margin: 5px 25px;
+    color: white;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.texts p{
+    margin: 15px 25px 0;
+    font-size: 16px;
+    text-align: start;
+    line-height: 25px;
+    color: $Soft-blue;
+}
+
+.eth{
+    margin: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+}
+
+.eth_color{
+    font-weight: 400;
+    color: $Cyan;
+}
+
+.eth_color img{
+    margin-right: 5px;
+}
+
+.eth_days{
+    color: $Soft-blue;
+}
+
+.eth_days img{
+    margin-right: 5px;
+}
+
+.avatar{
+    margin: 0 25px;
+    padding: 5px 0 0;
+    font-size: 16px;
+    box-sizing: border-box;
+    border-top: 1px solid $Very-dark-blue-l;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.avatar img{
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    border: solid white 1px;
+    border-radius: 50%;
+}
+
+.p1{
+    color: $Soft-blue;
+}
+
+.p2{
+    color: $White;
+}
+
+.attribution { font-size: 11px; text-align: center; color: white;}
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none; }
+
+@media screen and (min-width: 680px) {
+    .main{
+        width: 350px;
+        height: 600px;
+        margin: 150px auto 130px;
+    }
+
+    .nft{
+        width: 300px;
+        height: 300px;
+    }
+}
